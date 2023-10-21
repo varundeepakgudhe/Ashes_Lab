@@ -3,14 +3,14 @@ gwas-pw
 
 gwas-pw is a tool for jointly analysing two genome-wide association studies (GWAS). The basic setup is that you have performed two GWAS and want to identify loci that influence both traits. Instead of using two P-value thresholds to identify variants that influence both traits, the algorithm learns reasonable thresholds from the data. 
 
-###Dependencies###
+### Dependencies ###
 gwas-pw depends on:
 
 - the [GNU Scientific Library](http://www.gnu.org/software/gsl/)
 
 - the [Boost Libraries](http://www.boost.org)
 
-###Quick Start###
+### Quick Start ###
 The most up-to-date release is: version 0.21. See ["Releases"](https://github.com/joepickrell/gwas-pw/releases) above.
 After downloading gwas-pw-0.21.tar.gz at the link above, run:
 
@@ -31,7 +31,7 @@ Example data is available in the example_data/ directory. To ensure that gwas-pw
 >gwas-pw -i example_data/aam_height_example.gz -bed example_data/all_fourier_ls.bed -phenos AAM HEIGHT
 
 
-###Input file format###
+### Input file format ###
 The input file must have the following columns (in any order, they will be identified by the header). Rows must be sorted by chromosomal position:
 
 1. SNPID: A string with a SNP identifier
@@ -44,7 +44,7 @@ The input file must have the following columns (in any order, they will be ident
 
 Note the [pheno1] and [pheno2] will be supplied by you at the command line.
 
-###Output file format###
+### Output file format ###
 
 There are three output files:
 
@@ -92,7 +92,7 @@ There are three output files:
 
 -[output].MLE contains the estimated regional prior probabilites of each model (same as in [output].segbfs.gz)
 
-###Options###
+### Options ###
 
 -i [file name] name of the input file, in the format described above
 
